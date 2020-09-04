@@ -61,4 +61,14 @@ kubectl version --client
 Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.0", GitCommit:"e19964183377d0ec2052d1f1fa930c4d7575bd50", GitTreeState:"clean", BuildDate:"2020-08-26T14:30:33Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
+> short output
+
+```
+kubectl version --short --client
+```
+
+```
+Client Version: v1.19.0
+```
+
 Next: [Certificate Authority](04-certificate-authority.md)
