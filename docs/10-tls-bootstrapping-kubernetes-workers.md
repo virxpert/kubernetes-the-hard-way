@@ -86,7 +86,7 @@ For the workers(kubelet) to access the Certificates API, they need to authentica
 
 Bootstrap Tokens take the form of a 6 character token id followed by 16 character token secret separated by a dot. Eg: abcdef.0123456789abcdef. More formally, they must match the regular expression [a-z0-9]{6}\.[a-z0-9]{16}
 
-Bootstrap Tokens are created as a secret in the kube-system namespace.
+Bootstrap Tokens are created as a secret in the kube-system namespace. Run the step on one of the Master node
 
 ```
 cat > bootstrap-token-07401b.yaml <<EOF
