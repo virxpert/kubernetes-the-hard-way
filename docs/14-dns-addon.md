@@ -39,13 +39,13 @@ Reference: https://kubernetes.io/docs/tasks/administer-cluster/coredns/#installi
 
 ## Verification
 
-Create a `busybox` deployment:
+Create a `busybox` pod:
 
 ```
-kubectl run --generator=run-pod/v1  busybox --image=busybox:1.28 --command -- sleep 3600
+kubectl run busybox --image=busybox --command -- sleep 3600
 ```
 
-List the pod created by the `busybox` deployment:
+List the pod created by the `busybox` pod:
 
 ```
 kubectl get pods -l run=busybox
